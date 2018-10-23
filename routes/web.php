@@ -14,3 +14,26 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('recepti', function() {
+    return view('recepti');
+});
+
+Route::get('kategorije', function() {
+     return view('kategorije');
+});
+
+Route::get('onama' , function(){
+     return view('onama');
+});
+
+Route::get('kuhari', function(){
+     return view('kuhari');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
