@@ -1,1 +1,5 @@
-<h1> O nama </h1>
+
+@extends('layouts.app')
+@section('content')
+    <p>lmao</p>
+@endsection

@@ -45,6 +45,25 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="kategorije">Kategorije <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="recepti">Recepti</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="kategorije" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Moj profil
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#">Dodaj novi recept</a>
+                                      <a class="dropdown-item" href="#">Moji recepti</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Odjava</a>
+                                    </div>
+                                  </li>
+
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
