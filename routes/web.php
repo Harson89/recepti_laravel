@@ -15,12 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/kategorije','kategorijeController@ispisKategorija');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('recepti', function() {
     return view('recepti');
-});
-
-Route::get('kategorije', function() {
-     return view('kategorije');
 });
 
 Route::get('onama' , function(){

@@ -1,1 +1,7 @@
-<h1> Recepti </h1>
+@extends('layouts.app')
+@section('content')
+
+
+
+
+@endsection

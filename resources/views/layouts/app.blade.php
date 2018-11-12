@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                   Home
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,17 @@
                                   <li class="nav-item">
                                     <a class="nav-link" href="recepti">Recepti</a>
                                   </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="onama">O nama</a>
+                                  </li>
+
+                                  @if(Auth::guest())
+
+
+
+                                  @else
+
                                   <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="kategorije" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       Moj profil
@@ -58,10 +69,16 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="#">Dodaj novi recept</a>
                                       <a class="dropdown-item" href="#">Moji recepti</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#">Odjava</a>
-                                    </div>
+
+
                                   </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link" href="/logout">
+                                        Logout
+                                    </a>
+
+                                  @endif
 
 
                         <!-- Authentication Links -->
@@ -74,21 +91,28 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a href="/logout">
-                                    Logout
-                                </a>
+                             <!-- za usera usera -->
+
+                            @else
+
+
+
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                                 </div>
                             </li>
+                            <!-- za usera prijavljenog -->
+
+
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
+
+
+
 
         <main class="py-4">
             @yield('content')
