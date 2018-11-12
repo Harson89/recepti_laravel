@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/kategorije','kategorijeController@ispisKategorija');
+Route::get('/recepti','receptiController@ispisRecepata');
 
 
 
@@ -38,9 +39,10 @@ Route::get('/kategorije','kategorijeController@ispisKategorija');
 
 
 
-Route::get('recepti', function() {
+/*Route::get('recepti', function() {
     return view('recepti');
 });
+*/
 
 Route::get('onama' , function(){
      return view('onama');
