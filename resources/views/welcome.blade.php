@@ -84,7 +84,7 @@
 
                 <div class="links">
                 <a href="/kategorije">Kategorije</a>
-                <a href="{{ url('recepti')   }}">Recepti   </a>
+                <a href="/recepti">   Recepti   </a>
                 <a href="{{ url('kuhari')    }}">Kuhari    </a>
                 <a href="{{ url('onama')     }}">O nama    </a>
                 </div>
