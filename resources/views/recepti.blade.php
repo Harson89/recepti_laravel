@@ -28,9 +28,6 @@
       <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
       </tr>
   </table>
-
- {{$recepat->naziv_recepta}}
-    <br>
 @endforeach
 
 

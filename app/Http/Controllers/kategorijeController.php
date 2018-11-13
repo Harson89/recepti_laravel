@@ -13,6 +13,8 @@ class kategorijeController extends Controller
 
     return view('kategorije')->with('kategorije',$kategorije);
     }
+
+
 }
 
 

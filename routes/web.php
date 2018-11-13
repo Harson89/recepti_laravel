@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/kategorije','kategorijeController@ispisKategorija');
 Route::get('/recepti','receptiController@ispisRecepata');
 Route::get('/kuhari','ispisKuhara@ispisKuhara');
+Route::get('/receptiKategorije/{kategorija_id}','receptiController@receptiPoKategoriji');
 
 
 
