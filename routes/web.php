@@ -47,10 +47,10 @@ Route::get('/kuhari','ispisKuhara@ispisKuhara');
 
 
 
-/*Route::get('onama' , function(){
+Route::get('onama' , function(){
      return view('onama');
 });
-*/
+
 
 
 Auth::routes();

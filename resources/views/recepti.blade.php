@@ -5,34 +5,24 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Naziv recepta</th>
+        <th scope="col">Kuhar</th>
+        <th scope="col">Priprema</th>
+        <th scope="col">Slika</th>
+
       </tr>
     </thead>
     <tbody>
+         @foreach ($recepti as $recepat)
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <th scope="row">{{$recepat->id}}</th>
+        <td>{{$recepat->naziv_recepta}}</td>
+        <td>Kuhar</td>
+        <td>{{$recepat->priprema}}</td>
+      <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
   </table>
 
-@foreach ($recepti as $recepat)
  {{$recepat->naziv_recepta}}
     <br>
 @endforeach

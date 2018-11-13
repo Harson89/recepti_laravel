@@ -53,6 +53,10 @@
                                   </li>
 
                                   <li class="nav-item">
+                                    <a class="nav-link" href="kuhari">Kuhari</a>
+                                  </li>
+
+                                  <li class="nav-item">
                                     <a class="nav-link" href="onama">O nama</a>
                                   </li>
 
