@@ -15,9 +15,15 @@
     <tbody>
          @foreach ($recepti as $recepat)
       <tr>
+          <?php
+            $imeKuhara= App\User::where('id', $recepat->user_id)->get();
+            foreach($imeKuhara as $kuhar){
+                $ime = $kuhar->name;
+            }
+          ?>
       <th scope="row">{{$recepat->id}}</th>
         <td>{{$recepat->naziv_recepta}}</td>
-        <td>Kuhar</td>
+        <td>{{$ime}}</td>
         <td>{{$recepat->priprema}}</td>
       <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
       </tr>
