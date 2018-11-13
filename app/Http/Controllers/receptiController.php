@@ -7,7 +7,7 @@ use App\recieps;
 
 class receptiController extends Controller
 {
-    public function ipisRecepata()
+    public function ispisRecepata()
     {
      $recepti = recieps::all();
 
