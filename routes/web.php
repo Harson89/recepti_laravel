@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 Route::get('/kategorije','kategorijeController@ispisKategorija');
 Route::get('/recepti','receptiController@ispisRecepata');
+Route::get('/kuhari','ispisKuhara@ispisKuhara');
 
 
 
@@ -44,13 +45,13 @@ Route::get('/recepti','receptiController@ispisRecepata');
 });
 */
 
-Route::get('onama' , function(){
+
+
+/*Route::get('onama' , function(){
      return view('onama');
 });
+*/
 
-Route::get('kuhari', function(){
-     return view('kuhari');
-});
 
 Auth::routes();
 
