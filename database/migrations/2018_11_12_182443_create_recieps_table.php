@@ -18,9 +18,12 @@ class CreateReciepsTable extends Migration
             $table->string('naziv_recepta');
             $table->text('priprema');
             $table->integer('user_id');
-            $table->integer('kategorija_id');
             $table->text('slika');
             $table->timestamps();
+
+            $table->unsignedInteger('kategorija_id');
+            $table->foreign('kategorija_id')->references('id')->on('kategorije2s');
+
         });
     }
 
