@@ -2,31 +2,38 @@
 @section('content')
 
 <?php
-  $kategorije = App\kategorije2::all();
+$trenutnaKategorija = $receptiKategorije;
 ?>
 
-<div class="jumbotron">
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Naziv recepta</th>
+            <th scope="col">Kuhar</th>
+            <th scope="col">Priprema</th>
+            <th scope="col">Slika</th>
 
-<h1> Kategorije </h1>
+          </tr>
+        </thead>
+        <tbody>
+             @foreach ($trenutnaKategorija as $receptiTe)
 
-<br> <br>
+          <tr>
+                <?php
+                $imeKuhara= App\User::where('id', $receptiTe->user_id)->get();
+                foreach($imeKuhara as $kuhar){
+                    $ime = $kuhar->name;
+                }
+             ?>
+          <th scope="row">{{$receptiTe->id}}</th>
+            <td>{{$receptiTe->naziv_recepta}}</td>
+            <td>{{$ime}}</td>
+            <td>{{$receptiTe->priprema}}</td>
+          <td> <img src="{{$receptiTe->slika}}" class="img-fluid" alt="Responsive image"> </td>
+          </tr>
+      </table>
+    @endforeach
 
-<div>
-
-@foreach ($kategorije as $kategorija)
-
-<a href="/receptiKategorije/{{$kategorija->id}}">
-    <button class="btn btn-primary">
-        <p> {{$kategorija->naziv_kategorije}} </p>
-    </button>
-</a>
-<br>
-<br>
-
-@endforeach
-
-</div>
-
-</div>
 
 @endsection

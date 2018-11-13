@@ -18,14 +18,6 @@ class receptiController extends Controller
      return view('recepti')->with('recepti',$recepti);
     }
 
-    //Funkcija za ispis recepata po kategorijama
-
-    public function receptiPoKategoriji($kategorija_id)
-    {
-        $receptiKategorije = recieps::where('kategorija_id',$kategorija_id)->get();
-
-        return view('receptiKategorije')->with('receptiKategorije',$receptiKategorije);
-    }
 
 
 }
