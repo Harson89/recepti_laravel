@@ -10,4 +10,9 @@ class recieps extends Model
     {
         return $this->belongsTo(recieps::class);
     }
+
+    public function User()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
