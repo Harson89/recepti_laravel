@@ -46,18 +46,18 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                    <a class="nav-link" href="kategorije">Kategorije <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="/kategorije">Kategorije <span class="sr-only">(current)</span></a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="recepti">Recepti</a>
-                                  </li>
-
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="kuhari">Kuhari</a>
+                                    <a class="nav-link" href="/recepti">Recepti</a>
                                   </li>
 
                                   <li class="nav-item">
-                                    <a class="nav-link" href="onama">O nama</a>
+                                    <a class="nav-link" href="/kuhari">Kuhari</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/onama">O nama</a>
                                   </li>
 
                                   @if(Auth::guest())
