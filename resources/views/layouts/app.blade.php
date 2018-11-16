@@ -72,7 +72,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="#">Dodaj novi recept</a>
-                                      <a class="dropdown-item" href="#">Moji recepti</a>
+                                      <a class="dropdown-item" href="/mojiRecepti">Moji recepti</a>
 
 
                                   </li>

@@ -20,6 +20,7 @@ Route::get('/kategorije','kategorijeController@ispisKategorija');
 Route::get('/recepti','receptiController@ispisRecepata');
 Route::get('/kuhari','ispisKuhara@ispisKuhara');
 Route::get('/receptiKategorije/{kategorija_id}','receptiKategorijeController@receptiPoKategoriji');
+Route::get('/mojiRecepti','mojiReceptiController@ispisMojihRecepata');
 
 
 
