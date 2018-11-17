@@ -7,7 +7,6 @@
 
 <div class="jumbotron">
 
-<h1> Kategorije </h1>
 
 <br> <br>
 

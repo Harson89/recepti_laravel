@@ -13,7 +13,7 @@
 
 
 
-    <form method="get" action="/urediRecepat1">
+    <form method="get" action="urediRecepat1">
 
             <div class="form-group row">
               <label for="nazivRecepta" class="col-sm-2 col-form-label">Novi naziv recepta:</label>

@@ -31,13 +31,11 @@ Route::get('/mojiRecepti/{za_izbrisati}','mojiReceptiController@brisanjeRecepta'
 Route::get('/dodajRecept','dodajController@ispisKategorija');
 Route::get('/dodajRecept1','dodajController@store');
 Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
-Route::get('/urediRecepat1','urediController@updejtuj');
+Route::get('/urediRecepat1(','urediController@updejtuj');
 
-Route::get('/edit/{za_urediti}', function () {
-    return view('edit');
-});
+//Route::get('/edit/{za_urediti}', function () { return view('edit'); });
 
-
+//Route::get('/urediRecepat/urediRecepat1','receptiCotr');
 
 
 

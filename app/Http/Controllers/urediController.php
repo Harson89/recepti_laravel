@@ -28,7 +28,7 @@ public function updejtuj(Request $request)
 
     $uredjivac = recieps::where('id',$UrediOvaj);
 
-    return redirect('/uredjen');
+    return redirect('/urediRecepat1');
 
   /* $uredjivac= \App\recieps::where(id);
     $id = $request->get('id');
