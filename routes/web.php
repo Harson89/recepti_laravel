@@ -24,7 +24,8 @@ Route::get('/mojiRecepti','mojiReceptiController@ispisMojihRecepata');
 Route::get('/mojiRecepti/{za_izbrisati}','mojiReceptiController@brisanjeRecepta');
 Route::get('/dodajRecept','dodajController@ispisKategorija');
 Route::get('/dodajRecept1','dodajController@store');
-Route::get('/urediRecepat/{za_urediti}','urediController@uredjivanjeRecepta');
+Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
+Route::get('urediRecepat','urediController@uredjivanjeRecepta');
 
 
 
