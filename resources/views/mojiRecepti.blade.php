@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+
+
 <table class="table">
     <thead>
       <tr>
@@ -13,15 +15,18 @@
     </thead>
     <tbody>
          @foreach ($recepti as $recepat)
+
       <tr>
       <th scope="row">{{$recepat->id}}</th>
         <td>{{$recepat->naziv_recepta}}</td>
         <td>{{$recepat->priprema}}</td>
-      <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
+      <td> <img src="{{$recepat->slika}}" class="img-thumbnail" alt="Cinque Terre"s> </td>
+      <td> <a href="/mojiRecepti/{{$za_urediti = $recepat->id}}"> <button class="btn btn-outline-secondary"> Uredi </button> </a>  </td>
+      <td> <a href="/mojiRecepti/{{$za_izbrisati = $recepat->id}}"> <button class="btn btn-outline-secondary"> Izbriši </button> </a> </td>
+      <td>  </td>
       </tr>
-  </table>
+
+
 @endforeach
-
-
-
+</table>
 @endsection

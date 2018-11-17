@@ -27,9 +27,9 @@
         <td>{{$recepat->priprema}}</td>
       <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
       </tr>
-  </table>
-@endforeach
 
+@endforeach
+</table>
 
 
 @endsection

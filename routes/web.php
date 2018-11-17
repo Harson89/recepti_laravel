@@ -21,9 +21,9 @@ Route::get('/recepti','receptiController@ispisRecepata');
 Route::get('/kuhari','ispisKuhara@ispisKuhara');
 Route::get('/receptiKategorije/{kategorija_id}','receptiKategorijeController@receptiPoKategoriji');
 Route::get('/mojiRecepti','mojiReceptiController@ispisMojihRecepata');
-
-
-
+Route::get('/mojiRecepti/{za_izbrisati}','mojiReceptiController@brisanjeRecepta');
+Route::get('/dodajRecept','dodajController@ispisKategorija');
+Route::get('/dodajRecept1','dodajController@store');
 
 
 

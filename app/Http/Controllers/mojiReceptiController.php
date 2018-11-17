@@ -18,4 +18,12 @@ class mojiReceptiController extends Controller
     $recepti = recieps::where('user_id',$id_usera)->get();
     return view ('mojiRecepti')->with('recepti',$recepti);
     }
+
+
+    public function brisanjeRecepta($za_izbrisati)
+    {
+         $izbrisiOvaj = recieps::findOrFail($za_izbrisati);
+         $izbrisiOvaj->delete();
+         return redirect('/mojiRecepti');
+    }
 }
