@@ -16,9 +16,10 @@ class mojiReceptiController extends Controller
     {
     $id_usera = Auth::id();
     $recepti = recieps::where('user_id',$id_usera)->get();
-    return view ('mojiRecepti')->with('recepti',$recepti);
+    return view ('/mojiRecepti')->with('recepti',$recepti);
     }
 
+    //Funkcija za brisanje recepta
 
     public function brisanjeRecepta($za_izbrisati)
     {
@@ -26,4 +27,14 @@ class mojiReceptiController extends Controller
          $izbrisiOvaj->delete();
          return redirect('/mojiRecepti');
     }
+
+     /*Funkcija za uredjivanje recepta
+
+    public function uredjivanjeRecepta($za_urediti)
+    {
+         $urediOvaj = recieps::findOrFail($za_urediti);
+         return view ('/urediRecepat')->with('urediOvaj',$urediOvaj);
+    }
+
+*/
 }
