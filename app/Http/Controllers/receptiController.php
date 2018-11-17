@@ -20,5 +20,13 @@ class receptiController extends Controller
 
 
 
+    public function edit($id)
+
+    {
+         $post = Post::find($id);
+         return view ('/edit')->with('post'->$post);
+    }
+
+
 }
 

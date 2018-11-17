@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 
 
+Route::get('/uredjen', function () {
+    return view('uredjen');
+});
+
+
+
 Route::get('/kategorije','kategorijeController@ispisKategorija');
 Route::get('/recepti','receptiController@ispisRecepata');
 Route::get('/kuhari','ispisKuhara@ispisKuhara');
@@ -25,12 +31,11 @@ Route::get('/mojiRecepti/{za_izbrisati}','mojiReceptiController@brisanjeRecepta'
 Route::get('/dodajRecept','dodajController@ispisKategorija');
 Route::get('/dodajRecept1','dodajController@store');
 Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
-Route::get('urediRecepat','urediController@uredjivanjeRecepta');
+Route::get('/urediRecepat1','urediController@updejtuj');
 
-
-
-
-
+Route::get('/edit/{za_urediti}', function () {
+    return view('edit');
+});
 
 
 

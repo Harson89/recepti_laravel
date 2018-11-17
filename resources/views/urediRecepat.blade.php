@@ -1,15 +1,19 @@
 @extends('layouts.app')
 @section('content')
 
-
-
 @foreach ($urediOvaj as $zaUrediti)
 
 
 
 <div class="container">
 
-    <form method="get" action="urediRecepat"  >
+    <?php
+    $post = $zaUrediti->id;
+    ?>
+
+
+
+    <form method="get" action="/urediRecepat1">
 
             <div class="form-group row">
               <label for="nazivRecepta" class="col-sm-2 col-form-label">Novi naziv recepta:</label>
@@ -24,6 +28,8 @@
                     <textarea required="required" class="form-control" rows="5" name="novaPriprema" id="priprema" placeholder="{{$zaUrediti->priprema}}"></textarea>
                     </div>
                   </div>
+
+                <input id="prodId" name="id" type="hidden" value="{{$zaUrediti->id}}">
 
 
                           <div class="row">
