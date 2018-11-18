@@ -23,4 +23,6 @@ Kada idete na opciju "Dodaj novi recepat" otvori vam se forma za dodavanje novog
 
 Druga opcija je "Moji recepti".Kada ozaberete tu opciju otvori vam se novi page "Moji recepti".Gdje su ispisani svi recepti koji su u vasem vlasnistvu.Pored svakog recepta se ispisu dva dugmeta.Jedno dugme je "izbrisi" a drugo je "Uredi".Nakog odabira "izbrisi" dugmeta,izabrani recept ce se izbrisati iz baze a vi cete ponovo biti preusmjereni na "Moji recepti" page.Kada odaberete opciju "Uredi",otvorit ce vam se forma za uređivanje odabranog recepta.U svakom polju su ispisani vec postojeci podaci koji nakon novog unosa se mjenjaju u bazi.
 
+![slika baze](https://user-images.githubusercontent.com/37156656/46005557-c9ad6e00-c0b5-11e8-9bf9-97c2b839576e.png)
+
 
