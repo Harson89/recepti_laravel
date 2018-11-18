@@ -26,22 +26,30 @@ class dodajController extends Controller
         public function store(Request $request)
         {
             $trenutni_user = Auth::id();
+
+
+
             if($request->hasfile('filename'))
              {
                 $file = $request->file('filename');
                 $name=time().$file->getClientOriginalName();
                 $file->move(public_path().'/images/', $name);
              }
+
             $unos= new \App\recieps;
             $unos->naziv_recepta=$request->get('nazivRecepta');
             $unos->user_id=$trenutni_user;
             $unos->priprema=$request->get('priprema');
             $unos->kategorija_id=$request->get('kategorija');
-            $unos->slika="images/".$request->get('filename');
+
+           $unos->slika="images/".$request->get('filename');
+
+
             $unos->save();
 
             return redirect('/mojiRecepti');
         }
+
 
 
 

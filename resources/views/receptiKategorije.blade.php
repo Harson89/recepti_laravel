@@ -32,8 +32,8 @@ $trenutnaKategorija = $receptiKategorije;
             <td>{{$receptiTe->priprema}}</td>
           <td> <img src="{{$receptiTe->slika}}" class="img-fluid" alt="Responsive image"> </td>
           </tr>
+          @endforeach
       </table>
-    @endforeach
 
 
 @endsection

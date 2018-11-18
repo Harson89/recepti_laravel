@@ -5,30 +5,33 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\recieps;
 use App\User;
+use App\kategorije2;
+use Auth;
 
 class urediController extends Controller
 {
 
 //Funkcija za ispis recepta koji treba urediti
 
- public function recepatZaUrediti($za_urediti)
+public function recepatZaUrediti($za_urediti)
  {
       $urediOvaj = recieps::where('id',$za_urediti)->get();
       return view ('/urediRecepat')->with('urediOvaj',$urediOvaj);
  }
 
+
 //Funkcija za editovanje datog recepta
 
 public function updejtuj(Request $request)
 {
-
+   /*
     $novoIme = $request->get('noviNaziv');
     $novaPriprema = $request->get('novaPriprema');
     $UrediOvaj = $request->get('id');
 
     $uredjivac = recieps::where('id',$UrediOvaj);
-
-    return redirect('/urediRecepat1');
+   */
+    return redirect('/mojiRecepti');
 
   /* $uredjivac= \App\recieps::where(id);
     $id = $request->get('id');

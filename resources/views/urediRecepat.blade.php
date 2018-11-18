@@ -7,13 +7,10 @@
 
 <div class="container">
 
-    <?php
-    $post = $zaUrediti->id;
-    ?>
 
 
 
-    <form method="get" action="urediRecepat1">
+    <form method="get" action="editRecepat1">
 
             <div class="form-group row">
               <label for="nazivRecepta" class="col-sm-2 col-form-label">Novi naziv recepta:</label>
