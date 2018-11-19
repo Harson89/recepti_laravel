@@ -47,9 +47,14 @@ Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
 
 //Route::get('/urediRecepat/urediRecepat1','receptiCotr');
 
-Route::get('editRecepat1','urediController@updejtuj');
+Route::get('/editRecepat1','urediController@updejtuj');
+/*Route::get('/editRecepat1', function() {
+    return view('onama');
+});
 
-
+Route::get('test', function() {
+    return view('onama');
+});*/
 
 
 
