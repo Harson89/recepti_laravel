@@ -22,7 +22,7 @@
             <div class="form-group row">
                     <label for="priprema" class="col-sm-2 col-form-label">Uredite pripremu:</label>
                     <div class="col-sm-10">
-                    <textarea required="required" class="form-control" rows="5" name="novaPriprema" id="priprema" placeholder="{{$zaUrediti->priprema}}"></textarea>
+                    <textarea required="required" class="form-control" cols= "5" rows="5" name="novaPriprema" id="priprema" placeholder="{{$zaUrediti->priprema}}"></textarea>
                     </div>
                   </div>
 

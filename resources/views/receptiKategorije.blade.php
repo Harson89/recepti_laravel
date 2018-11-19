@@ -29,7 +29,7 @@ $trenutnaKategorija = $receptiKategorije;
           <th scope="row">{{$receptiTe->id}}</th>
             <td>{{$receptiTe->naziv_recepta}}</td>
             <td>{{$ime}}</td>
-            <td>{{$receptiTe->priprema}}</td>
+            <td style="width: 35%; word-break:break-all;">{{$receptiTe->priprema}}</td>
           <td> <img src="{{$receptiTe->slika}}" class="img-fluid" alt="Responsive image"> </td>
           </tr>
           @endforeach

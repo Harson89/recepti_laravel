@@ -48,22 +48,6 @@ Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
 //Route::get('/urediRecepat/urediRecepat1','receptiCotr');
 
 Route::get('/editRecepat1','urediController@updejtuj');
-/*Route::get('/editRecepat1', function() {
-    return view('onama');
-});
-
-Route::get('test', function() {
-    return view('onama');
-});*/
-
-
-
-
-/*Route::get('recepti', function() {
-    return view('recepti');
-});
-*/
-
 
 
 Route::get('onama' , function(){
@@ -78,3 +62,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+Route::get('pojedinacanRecept/{zaPrikaz}','receptiController@pojedinacniPrikaz');
+
+
+
+
