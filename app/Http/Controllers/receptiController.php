@@ -15,7 +15,6 @@ class receptiController extends Controller
     public function ispisRecepata()
     {
      $recepti = recieps::all();
-
      return view('recepti')->with('recepti',$recepti);
     }
 
@@ -32,11 +31,8 @@ class receptiController extends Controller
 
     public function pojedinacniPrikaz($zaPrikaz)
 {
-
     $trenutniRecepat = recieps::where('id',$zaPrikaz)->get();
-
     return view ('/pojedinacanRecept')->with('ovajRecept', $trenutniRecepat);
-
 }
 
 

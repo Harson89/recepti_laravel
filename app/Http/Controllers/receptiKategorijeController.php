@@ -13,7 +13,6 @@ class receptiKategorijeController extends Controller
      public function receptiPoKategoriji($kategorija_id)
      {
          $receptiKategorije = recieps::where('kategorija_id',$kategorija_id)->get();
-
          return view('receptiKategorije')->with('receptiKategorije',$receptiKategorije);
      }
 

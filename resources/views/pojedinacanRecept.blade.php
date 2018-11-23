@@ -33,9 +33,9 @@
           ?>
 
             <td class="pt-3-half" contenteditable="true">{{$ime}}</td>
-        <td class="pt-3-half" contenteditable="true" style="width: 35%; word-break:break-all;""><?php echo nl2br($prikaz->priprema) ?></td>
+        <td class="pt-3-half" contenteditable="true" style="width: 35%; word-break:break-all;"><?php echo nl2br($prikaz->priprema) ?></td>
             <td class="pt-3-half">
-                <img src="{{$prikaz->slika}}" class="img-fluid" alt="Responsive image">
+                <img src="{{$prikaz->slika}}" class="img-fluid" alt="Responsive image" width="500px" height="500px">
             </td>
           </tr>
         </table>

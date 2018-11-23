@@ -16,20 +16,17 @@
     <tbody>
          @foreach ($recepti as $recepat)
 
-
-
       <tr>
       <th scope="row">{{$recepat->id}}</th>
-        <td>{{$recepat->naziv_recepta}}</td>
-        <td>{{$recepat->priprema}}</td>
-      <td> <img src="{{$recepat->slika}}" class="img-thumbnail" alt="Cinque Terre"> </td>
-      <td> <a href="/urediRecepat/{{$za_urediti = $recepat->id}}"> <button class="btn btn-outline-secondary"> Uredi </button> </a>  </td>
-     <!-- <td> <a href="/edit/{{$za_izbrisati=$recepat->id}}"> <button class="btn btn-outline-secondary"> Uredi </button> </a>  </td>-->
 
+        <td>{{$recepat->naziv_recepta}}</td>
+        <td style="width: 35%; word-break:break-all;">{{$recepat->priprema}}</td>
+      <td> <img src="{{$recepat->slika}}" class="img-thumbnail" alt="Cinque Terre" width="500px" height="500px"> </td>
+      <td> <a href="/urediRecepat/{{$za_urediti = $recepat->id}}"> <button class="btn btn-outline-secondary"> Uredi </button> </a>  </td>
+      <!-- <td> <a href="/edit/{{$za_izbrisati=$recepat->id}}"> <button class="btn btn-outline-secondary"> Uredi </button> </a>  </td>-->
       <td> <a href="/mojiRecepti/{{$za_izbrisati = $recepat->id}}"> <button class="btn btn-outline-secondary"> Izbriši </button> </a> </td>
       <td>  </td>
       </tr>
-
 
 @endforeach
 </table>

@@ -15,17 +15,18 @@
 @foreach ($kategorije as $kategorija)
 
 <a href="/receptiKategorije/{{$kategorija->id}}">
+
     <button class="btn btn-primary btn-block">
         <p> {{$kategorija->naziv_kategorije}} </p>
     </button>
-</a>
-<br>
-<br>
 
+</a>
+
+<br>
+<br>
 @endforeach
 
 </div>
-
 </div>
 
 

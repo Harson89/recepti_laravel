@@ -28,13 +28,4 @@ class mojiReceptiController extends Controller
          return redirect('/mojiRecepti');
     }
 
-     /*Funkcija za uredjivanje recepta
-
-    public function uredjivanjeRecepta($za_urediti)
-    {
-         $urediOvaj = recieps::findOrFail($za_urediti);
-         return view ('/urediRecepat')->with('urediOvaj',$urediOvaj);
-    }
-
-*/
 }

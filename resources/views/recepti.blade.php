@@ -25,7 +25,7 @@
       </th>
         <td>{{$recepat->naziv_recepta}}</td>
         <td>{{$ime}}</td>
-      <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image"> </td>
+      <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image" width="500px" height="500px" > </td>
       </tr>
 
 @endforeach

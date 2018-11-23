@@ -35,8 +35,6 @@ public function updejtuj(Request $request)
 
         $recepti->save();
 
-
-
         return redirect('/mojiRecepti');
 
 

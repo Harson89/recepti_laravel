@@ -15,12 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/uredjen', function () {
     return view('uredjen');
 });
-
-
 
 Route::get('/kategorije','kategorijeController@ispisKategorija');
 
@@ -36,33 +33,21 @@ Route::get('/mojiRecepti/{za_izbrisati}','mojiReceptiController@brisanjeRecepta'
 
 Route::get('/dodajRecept','dodajController@ispisKategorija');
 
-//Za dodavanje recepta u bazu
 Route::get('/dodajRecept1','dodajController@store');
 
 Route::get('/urediRecepat/{za_urediti}','urediController@recepatZaUrediti');
 
-//Route::get('/urediRecepat1(','urediController@updejtuj');
-
-//Route::get('/edit/{za_urediti}', function () { return view('edit'); });
-
-//Route::get('/urediRecepat/urediRecepat1','receptiCotr');
-
 Route::get('/editRecepat1','urediController@updejtuj');
-
 
 Route::get('onama' , function(){
      return view('onama');
 });
 
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
 
 Route::get('pojedinacanRecept/{zaPrikaz}','receptiController@pojedinacniPrikaz');
 

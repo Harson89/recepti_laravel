@@ -20,14 +20,14 @@ class dodajController extends Controller
     return view ('/dodajRecept')->with('kategorije',$kategorije);
     }
 
+
+
     //Funkcija za dodavanje novog recepta u bazu
 
 
         public function store(Request $request)
         {
             $trenutni_user = Auth::id();
-
-
 
             if($request->hasfile('filename'))
              {
