@@ -24,7 +24,7 @@
         <a href="pojedinacanRecept/{{$zaPrikaz = $recepat->id}}"> <button class="btn btn-outline-secondary"> Otvori </button> </a>  </td>
       </th>
         <td>{{$recepat->naziv_recepta}}</td>
-        <td>{{$ime}}</td>
+        <td><a href="/kuharoviRecepti/{{$id_kuhara = $kuhar->id}}">{{$ime}}</a></td>
       <td> <img src="{{$recepat->slika}}" class="img-fluid" alt="Responsive image" width="500px" height="500px" > </td>
       </tr>
 

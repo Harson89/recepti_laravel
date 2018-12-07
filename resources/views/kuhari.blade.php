@@ -17,7 +17,7 @@
     <tbody>
       <tr>
       <th scope="row">{{$kuhar->id}}</th>
-      <td>{{$kuhar->name}}</td>
+      <td><a href="/kuharoviRecepti/{{$id_kuhara = $kuhar->id}}">{{$kuhar->name}} </a></td>
       <td>{{$kuhar->email}}</td>
       <td></td>
       </tr>

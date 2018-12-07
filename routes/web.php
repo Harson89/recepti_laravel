@@ -52,5 +52,10 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('pojedinacanRecept/{zaPrikaz}','receptiController@pojedinacniPrikaz');
 
 
+//Za davanje id broja izabranog usera
+
+Route::get('/kuharoviRecepti/{id_kuhara}','ispisKuhara@ispisZaOdabranog');
+
+
 
 
